@@ -23,6 +23,7 @@
                                                       javax.jms/jms
                                                       com.sun.jmdk/jmxtools
                                                       com.sun.jmx/jmxri]]
+                   [comb "0.1.0"]
                    [org.slf4j/slf4j-log4j12 "1.6.6"]]
     :plugins [[test2junit "1.1.0"]
               [codox "0.8.11"]
