@@ -19,6 +19,7 @@
                    [org.clojure/data.json "0.2.5"]
                    [clj-http "2.0.0"]
                    [org.clojure/tools.logging "0.3.1"]
+                   [ring/ring-core "1.3.2"]
                    [log4j/log4j "1.2.17" :exclusions [javax.mail/mail
                                                       javax.jms/jms
                                                       com.sun.jmdk/jmxtools
