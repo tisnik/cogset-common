@@ -10,7 +10,7 @@
 ;      Pavel Tisnovsky
 ;
 
-(defproject org.clojars.tisnik/cogset-common "0.3.0-SNAPSHOT"
+(defproject org.clojars.tisnik/cogset-common "0.4.0-SNAPSHOT"
     :description "Common functions used by the cogset"
     :url "https://github.com/tisnik/cogset-common"
     :license {:name "Eclipse Public License"
