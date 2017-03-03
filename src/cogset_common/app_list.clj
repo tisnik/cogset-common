@@ -14,3 +14,17 @@
     [app-name]
     (some #{app-name} app-list))
 
+(defn read-app-list
+    []
+    (let [cwd         (System/getProperty "user.dir")
+          dirinfo     (new java.io.File (str cwd "/src"))
+          filelist    (.listFiles dirinfo)
+          al          (->> filelist
+                          (filter #(.isDirectory %))
+                          (map #(.getPath %))
+                          (map #(subs % (inc (.lastIndexOf % "/"))))
+                          (remove #{"interface" "cogset"})
+                          (map #(.replaceAll % "_" "-")))]
+         (def app-list al)
+         app-list))
+
