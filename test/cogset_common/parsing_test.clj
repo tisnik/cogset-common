@@ -7,16 +7,16 @@
 ;
 
 (defn callable?
-    "Test if given function-name is bound to the real function."
-    [function-name]
-    (clojure.test/function? function-name))
+  "Test if given function-name is bound to the real function."
+  [function-name]
+  (clojure.test/function? function-name))
 
 ;
 ; Tests for function existence
 ;
 
 (deftest test-parse-int-existence
-    "Check that the cogset-common.parsing/parse-int definition exists."
-    (testing "if the cogset-common.parsing/parse-int definition exists."
-        (is (callable? 'cogset-common.parsing/parse-int))))
+  "Check that the cogset-common.parsing/parse-int definition exists."
+  (testing "if the cogset-common.parsing/parse-int definition exists."
+           (is (callable? 'cogset-common.parsing/parse-int))))
 
