@@ -11,5 +11,5 @@
 ;
 
 (ns cogset-common.core
-    "")
+  "")
 
